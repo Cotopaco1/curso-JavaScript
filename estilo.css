@@ -1,0 +1,10 @@
+body{
+    display: grid;
+    place-items: center;
+    margin: 0%;
+    height: 100vh;
+}
+section h2{
+
+    text-align: center;
+}
