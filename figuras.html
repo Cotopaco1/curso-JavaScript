@@ -6,69 +6,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras geometricas | Hace parte del curso practico de javascript en platzi</title>
     <LINK REL=StyleSheet HREF="estilo.css" TYPE="text/css" MEDIA=screen>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500;700&family=Roboto+Slab:wght@100;400;700&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500;700&family=Roboto+Slab:wght@100;400;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
-
     <header>
 
         <h1>
             Figuras geometricas
         </h1>
 
-        <p>Este es el primer taller del curso practico de javascript</p>
+        <p>Este es mi primer taller practico de Javascript 😎</p>
 
     </header>
+    <div class="container">
+    
 
     <section class="cuadrado">
 
-        <h2>Calcula el area y perimetro de un cuadrado</h2>
-
+        <h2>Cuadrado</h2>
+        <img src="https://www.pngmart.com/files/13/Square-PNG-Transparent-HD-Photo.png" alt="cuadrado" class="cuadradoImagen">
         <form action="">
-            <label for="inputCuadrado">Escribe cuanto mide cada lado de tu cuadrado</label>
-            <input id="inputCuadrado" type="number">
+            <p>Escribe un lado del cuadrado, solo necesitamos eso :)</p>
+
+            <input id="inputCuadrado" type="number" placeholder="Lado A">
+
+            <div>
             <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perimetro</button>
             <button type="button" onclick="calcularAreaCuadrado()">Calcular el area</button>
+            </div>
+
         </form> 
 
     </section>
 
     <section class="triangulo">
 
-        <h2>Calcula el area y perimetro de un Triangulo</h2>
-
-        <form action="">
-            <label for="inputTrianguloLadoUno">Escribe cuanto mide el primer lado triangulo</label>
-            <input id="inputTrianguloLadoUno" type="number" placeholder="Lado A">
-
-            <label for="inputTrianguloLadoDos">Escribe cuanto midee el segundo lado del triangulo</label>
-            <input id="inputTrianguloLadoDos" type="number">
-
-            <label for="inputTrianguloBase">Escribe cuanto mide la base del triangulo</label>
-            <input id="inputTrianguloBase" type="number">
-
-            <label for="inputTrianguloAltura">Escribe cuanto es la altura del triangulo</label>
-            <input id="inputTrianguloAltura" type="number">
-
+        <h2>Triangulo</h2>
+        <img src="https://static.vecteezy.com/system/resources/previews/001/200/691/original/triangle-png.png" alt="triangulo">
+        <form action="" class="formTriangulo">
+            <p>Escribenos los 2 lados del triangulo, su base y su altura, para calcular lo que necesites ^-^</p>
+            <div class="divTriangulo">
+            <input id="inputTrianguloLadoUno" type="number" placeholder="Lado A"> 
+            <input id="inputTrianguloLadoDos" type="number" placeholder="Lado B">
+           
+            </div>
+            <div class="divTriangulo">
+                <input id="inputTrianguloBase" type="number" placeholder="Base">
+                <input id="inputTrianguloAltura" type="number" placeholder="Altura">
+            </div>
+           <div>
             <button type="button" onclick="calcularPerimetroTriangulo()">Calcular el perimetro</button>
             <button type="button" onclick="calcularAreaTriangulo()">Calcular el area</button>
+            </div>
+
         </form> 
 
     </section>
 
     <section class="circulo">
 
-        <h2>Calcula el area y perimetro de un Circulo</h2>
-
+        <h2>Circulo</h2>
+        <img src="https://www.pngplay.com/wp-content/uploads/12/Black-Circle-PNG-HD-Photos.png" alt="circulo">
         <form action="">
-            <label for="inputCirculoRadio">Escribe el radio del Circulo</label>
-            <input id="inputCirculoRadio" type="number">
+            <p>Escribenos el radio de tu circulo y te damos el valor que desees >3</p>
+            <input id="inputCirculoRadio" type="number" placeholder="Radio">
             <button type="button" onclick="calcularDiametroCirculo()">Calcular el diametro</button>
             <button type="button" onclick="calcularPerimetroCirculo()">Calcular el perimetro</button>
             <button type="button" onclick="calcularAreaCirculo()">Calcular el area</button>
         </form> 
 
     </section>
+    <section class="triangulo">
+
+        <h2>Triangulo</h2>
+        <img src="https://static.vecteezy.com/system/resources/previews/001/200/691/original/triangle-png.png" alt="triangulo">
+        <form action="" class="formTriangulo">
+            <p>Escribenos los 2 lados del triangulo, su base y su altura, para calcular lo que necesites ^-^</p>
+            <div class="divTriangulo">
+            <input id="inputTrianguloLadoUno" type="number" placeholder="Lado A"> 
+            <input id="inputTrianguloLadoDos" type="number" placeholder="Lado B">
+           
+            </div>
+            <div class="divTriangulo">
+                <input id="inputTrianguloBase" type="number" placeholder="Base">
+                <input id="inputTrianguloAltura" type="number" placeholder="Altura">
+            </div>
+           <div>
+            <button type="button" onclick="calcularPerimetroTriangulo()">Calcular el perimetro</button>
+            <button type="button" onclick="calcularAreaTriangulo()">Calcular el area</button>
+            </div>
+
+        </form> 
+
+    </section><section class="trianguloIs">
+
+        <h2>Triangulo Isosceles</h2>
+        <img src="https://static.vecteezy.com/system/resources/previews/001/200/691/original/triangle-png.png" alt="triangulo">
+        <form action="" class="formTriangulo">
+            <p>Escribenos los 3 lados del triangulo isosceles para saber su altura ^^</p>
+            <div class="divTriangulo">
+            <input id="inputTrianguloIsLadoUno" type="number" placeholder="Lado A"> 
+            <input id="inputTrianguloIsLadoDos" type="number" placeholder="Lado B">
+            <input id="inputTrianguloIsLadoTres" type="number" placeholder="Lado C">
+           
+            </div>
+           <div>
+            <button type="button" onclick="calcularAlturaIsosceles()">Calcular la altura</button>
+            
+            </div>
+
+        </form> 
+
+    </section>
+    </div>
 
 <script src=".//figuras.js"></script>
 

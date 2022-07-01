@@ -3,8 +3,83 @@ body{
     place-items: center;
     margin: 0%;
     height: 100vh;
+    font-family: 'Roboto Slab', serif;
+    background-color: #77A6EA;
+}
+header{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+header h1{
+    font-weight: 700;
+    margin-bottom: 0;
+}
+header p{
+    font-weight: 400;
+    margin-top: 4px;
+    margin-bottom: 30px;
+    
+}
+.container{
+
+    
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 349.489px;
+    justify-content: space-around;
+}
+.divTriangulo{
+    display: flex;
 }
 section h2{
 
     text-align: center;
+}
+section form{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.formTriangulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section form input{
+    text-align: center;
+    background: none;
+    padding: 4px;
+    border-radius: 4px;
+    border: 1px solid black;
+    margin: 4px;
+    
+}
+section form input::placeholder{
+    color: #B166B5;
+}
+section form button{
+    background-color: aqua;
+    border-radius: 8px;
+    padding: 4px;
+    cursor: pointer;
+    margin: 4px;
+}
+section form div{
+    text-align: center;
+}
+section img{
+    width: 100px;
 }

@@ -33,6 +33,39 @@ function areaCirculo(radio){
     return (radio*radio)*Math.PI;
 } 
 
+//triangulo isosceles.
+
+function alturaTrianguloIs(lado1,lado2,lado3){
+
+    Number(lado1,lado2,lado3);
+
+    if ((lado1 === lado2) || (lado1 === lado3) || (lado2 === lado3)){
+
+        if (lado1===lado2 && lado2===lado3) {
+            return "No es un triangulo isosceles"
+        }
+        else{
+
+            if((lado1 != lado2) && (lado1 != lado3)){
+                var b = lado1;
+                var lado = lado2;
+            }
+            else if (lado2!=lado1 && lado2!=lado3){
+                var b = lado2;
+                var lado = lado1;
+            }
+        
+            else{
+                var b = lado3;
+                var lado = lado2;
+            }
+
+            var altura = Math.sqrt((lado*lado)-((b*b)/4));
+            return altura;
+        }
+    }
+}
+
 //Aqui interactuamos con el html
 //cuadrado
 function calcularPerimetroCuadrado(){
@@ -106,3 +139,14 @@ function calcularAreaCirculo(){
     
 }
 
+//triangulo isosceles..
+
+function calcularAlturaIsosceles(){
+    const lado1 = document.getElementById("inputTrianguloIsLadoUno");
+    const lado2 = document.getElementById("inputTrianguloIsLadoDos");
+    const lado3 = document.getElementById("inputTrianguloIsLadoTres");
+
+    const altura=alturaTrianguloIs(lado1.value,lado2.value,lado3.value);
+
+    alert (altura);
+}
