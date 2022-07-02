@@ -41,7 +41,7 @@ function calcularMedia(lista){
 
 }
 
-//funcion para saber si un numero es par.
+//funcion para saber si un numero es par.       
 function esPar(num){
 
     if (num % 2 ===0){
@@ -52,3 +52,7 @@ function esPar(num){
     }
 
 }
+
+//function calcularMedia con input del usuario
+
+function CalcularMediaInput()
