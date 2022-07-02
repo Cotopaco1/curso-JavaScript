@@ -4,7 +4,7 @@ function precioDescuento(precio,descuento){
     return precioFinal;
 }
 
-
+//esto es una prueba
 const cupones50 = ["cupon1","cupon2","cupon3", "cupon4", "cupon5"]
 const cupones10 = ["cuponA","cuponB","cuponC","cuponD"]
 
