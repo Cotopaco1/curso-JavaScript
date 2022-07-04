@@ -10,8 +10,14 @@
     
     <h1>media</h1>
 
-    <label for="">Escribe los numeros</label>
-    <input type="text" id="input">
+    <label for="inputArray">Escribe una lista de numero separados de una coma para sacar la media de la lista de numeros</label>
+
+    <input type="number" id="inputArray" placeholder="1,2,3,4,5,6,7,8,9">
+
+    <button type="button" onclick="calcularMediaInput()">Calcula la media</button>
+    
+
+    <p id="resultado"></p>
     <script src="./media.js"></script>
 </body>
 </html>
