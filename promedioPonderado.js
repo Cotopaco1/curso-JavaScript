@@ -14,25 +14,50 @@ var notas = [
 
 // hacer la formula con los elementos de esos objetos dentro del array.
 
+//asi fue como aprendi a hacerlo despues.
 
+function CalcularPonderadoPromedio(notas){
 var multiplicacionNotaPonderado= [];
-var sumaPonderados= [];
 
-for (let i = 0; i<notas.length; i++){
-    
-     multiplicacionNotaPonderado[i] = notas[i].nota * notas[i].ponderado;
-    sumaPonderados[i] = notas[i].ponderado;
-    
+multiplicacionNotaPonderado = notas.map(function (obj){
+    return obj.nota * obj.ponderado;
+});
+
+var sumaNotaPonderadoResultado = multiplicacionNotaPonderado.reduce(function (valorAcumulado = 0, nuevoElemento){
+    return valorAcumulado + nuevoElemento;
+});
+
+var ponderados = notas.map(function (obj){
+    return obj.ponderado;
+});
+
+const sumaPonderados = ponderados.reduce(function (valorAcumulado = 0, nuevoElemento){
+    return valorAcumulado + nuevoElemento;
+});
+
+ponderadoPromedio = sumaNotaPonderadoResultado / sumaPonderados;
+
+return ponderadoPromedio;
 }
-const multiplicacionResultado = multiplicacionNotaPonderado.reduce(function (valorAcumulado=0 ,nuevoElemento){
-    return valorAcumulado + nuevoElemento;
-})
-const sumaPonderadosResultado = sumaPonderados.reduce(function (valorAcumulado=0 ,nuevoElemento){
-    return valorAcumulado + nuevoElemento;
-})
 
-const promedioPonderado = multiplicacionResultado / sumaPonderadosResultado;
-console.log(promedioPonderado);
+
+//asi fue como yo lo hice
+
+// for (let i = 0; i<notas.length; i++){
+    
+//      multiplicacionNotaPonderado[i] = notas[i].nota * notas[i].ponderado;
+//     sumaPonderados[i] = notas[i].ponderado;
+    
+// }
+// const multiplicacionResultado = multiplicacionNotaPonderado.reduce(function (valorAcumulado=0 ,nuevoElemento){
+//     return valorAcumulado + nuevoElemento;
+// })
+// const sumaPonderadosResultado = sumaPonderados.reduce(function (valorAcumulado=0 ,nuevoElemento){
+//     return valorAcumulado + nuevoElemento;
+// })
+
+// const promedioPonderado = multiplicacionResultado / sumaPonderadosResultado;
+// console.log(promedioPonderado);
 
 
 // formula: ((dato*ponderado) + (dato2*ponderado2))/ (ponderado+ponderado2);

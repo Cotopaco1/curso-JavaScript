@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <LINK REL=StyleSheet HREF="salarios.css" TYPE="text/css" MEDIA=screen>
+
+    <title>Salarios</title>
+</head>
+<body>
+    
+    <header>
+        <h1>
+            En este articulo mostraremos datos importantes sobre una poblacion en especifico del mundo ^^
+        </h1>
+        <h3>¿Que es la capacidad de endeudamiento?
+            <br>
+            La capacidad de endeudamiento es el nivel máximo en que puedes endeudarte, y para calcularlo es preciso tener en cuenta tus ingresos netos, solvencia y el porcentaje actual de lo que debes sobre lo que tienes.
+            <br>
+            Esto quiere decir que la capacidad de endeudamiento es el valor maximo ideal que deberias pagar mensualmente por una deuda segun expertos.
+        </h3>
+    </header>
+    <div>
+    <section>
+        <h2>Capacidad de endeudamiento mediana de la poblacion general:</h2>
+        <p id="poblacionGeneral"></p>
+        <h2>Capacidad de endeudamiento mediana de la poblacion 10% mas adinerada</h2>
+        <p id="poblacionAdineradaTop10"></p>
+        <h2>Capacidad de endeudamiento media de la poblacion 20% menos adinerada</h2>
+        <p id="poblacionMenosAdineradaTop10"></p>
+        <h2>Ahora calculemos la capacidad de endeudamiento tuya :)</h2>
+        <label for="ingresoMensual">Escribe tu ingreso mensual</label>
+        <input type="number" id="ingresoMensual">
+        <label for="gastoMensual">Escribe tu gastos mensuales (fijos y variables sumados)</label>
+        <input type="number" id="gastoMensual">
+        <button type="button" onclick="calcularCapacidadEndeudamientoUsuario()">Calcular</button>
+        <p id="capacidadEndeudamientoUser"></p>
+
+
+    </section>
+    <section>
+        <h1>Este diagnostico se realizo con una lista fictica de 23 personas cada uno con su ingreso mensual y gastos mensuales, se puede realizar sobre cualquier otro tipo de poblacion simplemente obteniedo los datos en una lista, el objetivo de esta pagian es probar el codigo.</h1>
+    </section>
+    </div>
+
+
+
+
+
+    <script src="./salarios.js"></script>
+    <script src="./analisis.js"></script>
+
+</body>
+</html>

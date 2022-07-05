@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+}
+body{
+    margin: 0;
+    height: 100vh;
+}
+body header{
+    text-align: center;
+}
+body div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+body div section{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+#formUser{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#listaCupones{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#formUser input, label{
+    margin: 8px;
+}

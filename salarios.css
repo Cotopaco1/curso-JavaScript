@@ -1,0 +1,19 @@
+body{
+    display: grid;
+
+}
+body header{
+    text-align: center;
+}
+body div{
+    display: flex;
+    justify-content: space-around;
+}
+
+section{
+    width: 50%;
+}
+body div section:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+}

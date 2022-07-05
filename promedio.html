@@ -7,11 +7,20 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <h1>promedio</h1>
+    <header>
 
-    <label for="">Escribe los numeros</label>
-    <input type="text">
+        <h1>Promedio</h1>
+        <p>Este es el tercer taller parte 1 de javaScript</p>
+    </header>
+
+    <section>
+        <h2>El promedio se refiere a la cantidad o valor medio que resulta de dividir la suma de todos los valores entre el número de estos.</h2>
+        <h3>Funciona para saber el promedio de una cantidad de datos relacionadas, pero no funciona para todos los casos donde hay desigualdad de datos.</h3>
+        <label for="inputUser">Escriba los numeros a los cualess quieres saber su promedio, separado de una , cadad uno</label>
+        <input type="text" placeholder="1,2,3,4,5,6,7,8,9" id="inputUser">
+        <button type="button" onclick="calcularPromedioUser()">Calcular</button>
+        <p id="resultUser"></p>
+    </section>
     <script src="./promedio.js"></script>
 </body>
 </html>

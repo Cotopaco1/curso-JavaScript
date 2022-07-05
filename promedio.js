@@ -1,4 +1,4 @@
-const lista1 = [100,200,300,400];
+
 
 function calcularPromedio(lista){
 
@@ -23,3 +23,22 @@ function calcularPromedio(lista){
     var promedio = sumaElementos / lista.length;
     return promedio;
 }   
+
+
+function stringToNumbers(lista){
+    var nuevaLista = JSON.parse("["+ lista + "]");
+    return nuevaLista
+
+}
+
+
+
+function calcularPromedioUser(){
+    var userInput = document.getElementById("inputUser");
+    var userInputValue= userInput.value;
+    var userArrayN = stringToNumbers(userInputValue);
+
+    const promedioUser = calcularPromedio(userArrayN);
+    var resultP = document.getElementById("resultUser");
+    resultP.innerText = "El promedio de tus datos es: "+promedioUser;
+}

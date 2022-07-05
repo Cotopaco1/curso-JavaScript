@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <LINK REL=StyleSheet HREF="descuentos.css" TYPE="text/css" MEDIA=screen>
+
     <title>Porcentajes y descuentos | curso practico js</title>
 
 </head>
@@ -13,9 +15,9 @@
         <h1>Porcentajes y descuentos</h1>
         <p>Este es el segundo taller de javaScript</p>
     </header>
-
+    <div>
     <section>
-        <form action="">
+        <form action="" id="formUser">
 
             <label for="precioOriginal">Escribe el precio y el descuento para calcular en cuanto tendras que pagar</label>
             <input type="number" id="precioOriginal" placeholder="Precio del producto">
@@ -28,7 +30,18 @@
             <p id="resultP"></p>
         </form>
     </section>
-
+    <section>
+        <ul id="listaCupones">
+            <h2>Lista de cupones:</h2>
+            <li>
+                cupon del 50%: cupon1 ,cupon2 ,cupon3 ,cupon4 ,cupon5.
+            </li>
+            <li>
+                cupon del 10%: cuponA, cuponB, cuponC, cuponD.
+            </li>
+        </ul>
+    </section>
+        </div>
 
 
 <script src="./descuentos.js"></script>
